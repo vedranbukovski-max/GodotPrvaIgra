@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bw3osar7btq7d"]
+
+[ext_resource type="Script" uid="uid://b7uxale6ttrff" path="res://scripts/hamburger.gd" id="1_hiqje"]
+[ext_resource type="Texture2D" uid="uid://cb366vdpxwepa" path="res://assets/hamburger.png" id="1_pchkq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
+size = Vector2(29, 29)
+
+[node name="Hamburger" type="Area2D" unique_id=1663957006 groups=["hamburger"]]
+collision_layer = 4
+script = ExtResource("1_hiqje")
+
+[node name="Slika" type="Sprite2D" parent="." unique_id=607147432]
+scale = Vector2(2, 2)
+texture = ExtResource("1_pchkq")
+
+[node name="Oblik" type="CollisionShape2D" parent="." unique_id=1959206558]
+scale = Vector2(2, 2)
+shape = SubResource("RectangleShape2D_xrivr")
+debug_color = Color(0, 0.6, 0.69803923, 0)
