@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bn5k6v8k63xj4"]
+
+[ext_resource type="Texture2D" uid="uid://bw7br1mjhxx4w" path="res://assets/Superburger.png" id="1_5mcae"]
+[ext_resource type="Script" uid="uid://pmcaqgrlrkcl" path="res://scripts/superburger.gd" id="1_c1s8r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_en474"]
+size = Vector2(29, 29)
+
+[node name="Superburger" type="Area2D" unique_id=2125374500 groups=["hamburger"]]
+light_mask = 4
+script = ExtResource("1_c1s8r")
+
+[node name="Slika" type="Sprite2D" parent="." unique_id=1326046346]
+scale = Vector2(2, 2)
+texture = ExtResource("1_5mcae")
+
+[node name="Oblik" type="CollisionShape2D" parent="." unique_id=891743480]
+scale = Vector2(2, 2)
+shape = SubResource("RectangleShape2D_en474")
+debug_color = Color(0, 0.60038817, 0.70000815, 0)
