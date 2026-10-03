@@ -1,1 +1,2 @@
-# GodotPrvaIgra
+# Moj prvi samostalni projekt
+
