@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://crxw7p4oobpit"]
+
+[ext_resource type="Texture2D" uid="uid://badetu8vvlwl0" path="res://assets/igrac.png" id="1_dfpsh"]
+[ext_resource type="Script" uid="uid://c30rw62nnpgfh" path="res://scripts/igrac.gd" id="1_wne0e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
+size = Vector2(29, 66)
+
+[node name="Igrac" type="CharacterBody2D" unique_id=1225709342 groups=["igrac"]]
+collision_mask = 2
+script = ExtResource("1_wne0e")
+
+[node name="Slika" type="Sprite2D" parent="." unique_id=2034228987]
+scale = Vector2(2, 2)
+texture = ExtResource("1_dfpsh")
+
+[node name="Oblik" type="CollisionShape2D" parent="." unique_id=1748087708]
+scale = Vector2(2, 2)
+shape = SubResource("RectangleShape2D_xrivr")
+debug_color = Color(0, 0.6, 0.69803923, 0)
